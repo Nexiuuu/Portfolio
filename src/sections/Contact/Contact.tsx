@@ -1,8 +1,8 @@
 import { Container } from "@/components/layout/Container"
 
-export const About = () => {
+export const Contact = () => {
     return (
-        <section id="about">
+        <section id="contact">
             <Container>
                 <div>
                     
