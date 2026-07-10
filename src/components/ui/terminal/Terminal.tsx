@@ -6,17 +6,18 @@ export const Terminal = () => {
     return (
         <div className="
         rounded-xl
+        overflow-hidden
 
         border
-        border-slate-800
+        border-white/10
 
-        bg-slate-950/80
+        bg-gradient-to-b
+        from-slate-900/90
+        to-slate-950/95
 
-        backdrop-blur
+        backdrop-blur-md
 
         shadow-2xl
-
-        overflow-hidden
         ">
             <TerminalHeader />
             <TerminalHistory />

@@ -3,7 +3,14 @@ import { heroButtons } from "@/data/hero";
 
 export const HeroActions = () => {
     return (
-        <div className="flex gap-4">
+        <div className="
+            flex 
+            flex-col
+            gap-4
+
+            sm:flex-row
+          "
+        >
             {heroButtons.map((button) => (
                 <Button key={button.id} {...button} />
             ))}

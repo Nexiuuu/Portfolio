@@ -18,7 +18,7 @@ const GridEffect = () => (
     inset-0 
     opacity-10 
     bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] 
-    bg-[size:24px_24px]" 
+    bg-[size:1.5rem_1.5rem]" 
     />
 );
 
@@ -39,7 +39,6 @@ const Orbit = () => {
                 aspect-square
                 rounded-full 
                 border 
-                border-none 
                 border-slate-800"
             />
 
@@ -82,27 +81,37 @@ interface ImageWrapperProps {
 
 const ImageWrapper = ({ children }: ImageWrapperProps) => (
     <div className="
+        absolute
+        relative
+
+        flex
+        items-center
+        justify-center
+
+        w-2/3
+        aspect-square
+
+        overflow-hidden
+        rounded-full
+
+        border
+        border-slate-700/60
+
+        bg-slate-900/40
+        backdrop-blur-sm
+
+        shadow-2xl
+
         before:absolute
         before:inset-0
         before:rounded-full
         before:border
         before:border-white/5
-
-        absolute w-2/3 
-        aspect-square 
-        rounded-full 
-        border border-slate-700/60 
-        bg-slate-900/40 
-        backdrop-blur-sm 
-        flex 
-        items-center 
-        justify-center 
-        shadow-2xl 
-        overflow-hidden"
+        "
     >
         {children || (
             <div className="text-slate-500 text-sm font-mono select-none">
-                Coming soon
+                Profile Photo
             </div>
         )}
   </div>
@@ -119,7 +128,7 @@ export const HeroVisual = ({ children }: HeroVisualProps) => {
             flex 
             items-center 
             justify-center 
-            min-h-[400px]
+            min-h-[25rem] md:min-h-[30rem] lg:min-h-[35rem]
             rounded-2xl 
             overflow-hidden 
             border 
@@ -133,7 +142,7 @@ export const HeroVisual = ({ children }: HeroVisualProps) => {
             <div className="
                 relative
                 w-full
-                max-w-md
+                max-w-md lg:max-w-lg
                 aspect-square
                 flex
                 items-center

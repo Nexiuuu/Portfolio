@@ -18,5 +18,5 @@ export const heroButtons: ButtonProps[] = [
 export const heroContent = {
     name: "Alan",
     role: "Frontend Developer",
-    description: "..."
+    description: "Building fast, modern and interactive web applications."
 }
