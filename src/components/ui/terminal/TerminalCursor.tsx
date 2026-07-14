@@ -6,6 +6,7 @@ export const TerminalCursor = () => {
             <span className="
                 font-mono
                 text-slate-200
+                select-none
                 animate-[blink_1s_steps(2,start)_infinite]
                 "
             >
