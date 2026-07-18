@@ -43,7 +43,7 @@ export const ProjectImage = ({ image }: ProjectImageProps) => {
                     <span className="h-3 w-3 rounded-full bg-green-500" />
                 </div>
 
-                <span className="text-xs text-slate-500">
+                <span className="text-xs text-slate-500 select-none">
                     portfolio.dev
                 </span>
             </div>

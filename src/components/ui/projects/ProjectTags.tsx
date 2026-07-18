@@ -46,6 +46,7 @@ export const ProjectTags = ({ technologies }: ProjectTagsProps) => {
                             font-medium 
 
                             border
+                            select-none
 
                             transition-all
                             duration-200
